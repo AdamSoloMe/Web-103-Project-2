@@ -4,7 +4,7 @@ Submitted by: **Adam Solomon**
 
 **Boss Compendium** catalogs memorable video game bosses. This version refactors the Unit 1 listicle so every list item is stored in and served from a **Render PostgreSQL** database. The frontend is plain HTML, CSS and JavaScript that fetches data from the Express API.
 
-Time spent: **_ hours**
+Time spent: *3*_ hours**
 
 ## Required Features
 
