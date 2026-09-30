@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boss Compendium</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="container">
+    <ul>
+      <li><strong>🗡️ Boss Compendium</strong></li>
+    </ul>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <hgroup>
+      <h1>Boss Compendium</h1>
+      <p>A field guide to the toughest bosses ever fought. Click a boss to see the full entry.</p>
+    </hgroup>
+
+    <form id="search-form" class="search-bar" role="search">
+      <input type="search" id="search" name="search" placeholder="Search by name, game, or location" aria-label="Search bosses" />
+      <select id="difficulty" name="difficulty" aria-label="Filter by difficulty">
+        <option value="">All difficulties</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+        <option value="Legendary">Legendary</option>
+      </select>
+    </form>
+
+    <p id="status" aria-live="polite" aria-busy="true">Loading bosses…</p>
+    <div id="boss-grid" class="grid boss-grid"></div>
+  </main>
+
+  <script src="/scripts/api.js"></script>
+  <script src="/scripts/bosses.js"></script>
+</body>
+</html>

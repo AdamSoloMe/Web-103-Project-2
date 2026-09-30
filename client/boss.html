@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boss Compendium</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav class="container">
+    <ul>
+      <li><strong>🗡️ Boss Compendium</strong></li>
+    </ul>
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <a href="/">&larr; Back to all bosses</a>
+    <p id="status" aria-live="polite" aria-busy="true">Loading boss…</p>
+    <article id="boss-detail" class="boss-detail" hidden></article>
+  </main>
+
+  <script src="/scripts/api.js"></script>
+  <script src="/scripts/boss.js"></script>
+</body>
+</html>
