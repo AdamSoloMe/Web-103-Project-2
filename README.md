@@ -31,6 +31,10 @@ Here's a walkthrough of implemented required features:
 
 <img src='docs/walkthrough.gif' title='Video Walkthrough' width='700' alt='Video Walkthrough GIF' />
 
+The walkthrough shows the app running against the Render PostgreSQL database: the boss list loading, searching for "zelda", filtering by Legendary difficulty, opening a boss's detail page, and the 404 page for an unknown boss.
+
+GIF created with a headless-Chrome recording script (Chrome DevTools Protocol) + `ffmpeg`.
+
 ## Project Structure
 
 ```
